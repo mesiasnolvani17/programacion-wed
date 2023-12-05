@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del documento HTML -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    
+    <!-- Enlace a la hoja de estilos principal -->
+    <link rel="stylesheet" href="main.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+    <!-- Contenedor principal de la página -->
+    <div class="content">
+        <!-- Encabezado con el logotipo -->
+        <h1 class="logo">Contacto</h1>
+        
+        <!-- Contenedor de contacto con animación -->
+        <div class="contact-wrapper animated bounceInUp">
+            <!-- Formulario de contacto -->
+            <div class="contact-form">
+                <!-- Título del formulario -->
+                <h3>Ingresa tus datos</h3>
+                
+                <!-- Formulario HTML -->
+                <form action="#" method="post">
+                    <!-- Campo para ingresar el nombre -->
+                    <p>
+                        <label for="fullname">Ingresa tu nombre</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </p>
+                    
+                    <!-- Campo para ingresar el correo electrónico -->
+                    <p>
+                        <label for="email">Ingresa tu correo</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    
+                    <!-- Campo para ingresar el número de teléfono -->
+                    <p>
+                        <label for="phone">Ingresa tu número de teléfono</label>
+                        <input type="tel" name="phone" id="phone">
+                    </p>
+                    
+                    <!-- Campo para ingresar el asunto o problema -->
+                    <p>
+                        <label for="affair">Ingresa tu problema</label>
+                        <input type="text" name="affair" id="affair">
+                    </p>
+                    
+                    <!-- Campo para dejar un mensaje -->
+                    <p class="block">
+                       <label for="message">Deja un mensaje</label> 
+                        <textarea name="message" id="message" rows="3"></textarea>
+                    </p>
+                    
+                    <!-- Botón de envío del formulario -->
+                    <p class="block">
+                        <button type="submit">Enviar</button>
+                    </p>
+                </form>
+            </div>
+            
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <!-- Título de la sección -->
+                <h4>Más información</h4>
+                
+                <!-- Lista de información de contacto -->
+                <ul>
+                    <li><i class="fas fa-phone"></i> +591 77889900</li>
+                    <li><i class="fas fa-envelope-open-text"></i> mesiasprueb@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

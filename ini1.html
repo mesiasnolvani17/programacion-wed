@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inicio de seccion </title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--aqui llamamos a mi estilo css-->
+    <link rel="stylesheet" href="ini2.css">
+</head>
+<body>
+    <!--aqui le ponemos clase pora ponerle tamaños y estilo con el css -->
+    <div class="contenedor-login">
+        <div class="contenedor-slider">
+            <div class="slider">
+                <!-- Slide 1 -->
+                <div class="slide fade ">
+                    <div class="contenido-slider">
+                        <!--aqui colocamos el logo q se mostrara en la pantalla-->
+                        <div class="logo">
+                            <img src="baner,logo/logo.png" alt="">
+                        </div>
+                        <!--aqui le agregamos una clase q en mi estilo css se hara poner en a los lado -->
+                        <p class="slider-texto">
+                            <!--aqui le agregamos el texto q va a leer el usuario -->
+                            inicio de Sesión : Ingresa tu correo personal o creo una cuenta en Registrarte , Ingresa la Contraseña con la inicio en Registrarse , y si olvidaste la contraseña? Ingresa donde dise ¿olvidaste tu contraseña?
+                    </div>
+                </div>
+                <!--aqui sera donde ira otra imagen con su animacion -->
+                <!-- Slide 2 -->
+                <div class="slide fade">
+                    <div class="contenido-slider">
+                        <!--aqui le poenemos las clases -->
+                        <div class="logo">
+                            <!--la segunda imagen q se le pondra -->
+                            <img src="baner,logo/xxx.jfif" alt="">
+                        </div>
+                        <!--aqui le ponemos el texto para el q el usuario lea el procedimientos -->
+                        <p class="slider-texto">
+                            Registrarse : coloque su nombre de usario y su Apellidos para haci crear su cuenta personal del  catalogo un correo personal o aqui mismo le damos un correo , coloque una contraseña? donde no se olvidar 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones next y prev -->
+            <!--este funcion q esta abajo a la derecha q era hara una animacion en el momento q se mueva de un lado a otro-->
+            <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+            <!-- dots -->
+            <div class="dots">
+            </div>
+        </div>
+        <div class="contenedor-texto">
+            <div class="contenedor-form">
+                <!--aqui le ponemos una clase para luego modificar con css -->
+                <h1 class="titulo">¡Bienvenido a mundo joyeria</h1>
+                <!--aqui le ponemos el nombre y titulo para q muestre en la pagina -->
+                <p class="descripcion">Ingresa tu cuenta y tu contraseña?.</p>
+                <!--aqui hacemos una clase para la particion de dos enlase -->
+                <ul class="tabs-links">
+                    <li class="tab-link active">Iniciar Sesión</li>
+                    <li class="tab-link ">Registrate</li>
+                </ul>
+
+                <form action="" method="POST" id="formLogin" class="formulario active">
+
+                    <div class="error-text">
+                        <p>aqui los errores del formualrio</p>
+                    </div>
+
+                    <input type="text" placeholder="Correo electrónico" class="input-text" name="correo" autocomplete="off"> 
+                    <div class="grupo-input">
+
+                        <input type="password" placeholder="Contraseña" name="password" class="input-text clave">
+                        <button type="button" class="icono fas fa-eye mostrarClave"></button>
+                        
+                    </div>
+
+                    <a href="#" class="link">¿Ovidaste tu contraseña?</a>
+                    <button class="btn" id="btnLogin" type="button">Iniciar Sesión</button>
+
+                </form>
+                
+                <form action="" method="POST" id="formRegistro" class="formulario ">
+
+                    <div class="error-text ">
+                        
+                    </div>
+
+                    <input type="text" placeholder="Nombre y Apellidos" class="input-text" name="nombre" autocomplete="off"> 
+                    <input type="text" placeholder="Correo electrónico" class="input-text" name="correo" autocomplete="off"> 
+
+                    <div class="grupo-input">
+
+                        <input type="password" placeholder="Contraseña" name="password" class="input-text clave">
+                        <button type="button" class="icono fas fa-eye mostrarClave"></button>
+                        
+                    </div>
+
+                    <!-- Checkbox Personalizados -->
+                    <label class="contenedor-cbx animate">
+                        Me gustaría recibir notificaciones sobre productos
+                        <input type="checkbox" name="cbx_notificaciones" checked>
+                        <span class="cbx-marca"></span>
+                    </label>
+
+                     <label class="contenedor-cbx animate">
+                        He leído y acepto los
+                        <a href="#" class="link">Términos y Condiciones</a>
+                        <a href="#" class="link">y Política de privacidad de mi Tienda</a>
+
+                        <input type="checkbox" name="cbx_terminos" >
+                        <span class="cbx-marca"></span>
+
+                    </label>
+
+                    <button class="btn" id="btnRegistro" type="button">Crear Cuenta</button>
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="ini3.js"></script>
+    
+</body>
+</html>
